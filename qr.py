@@ -77,8 +77,8 @@ def create_qr_code(
     qr = qrcode.QRCode(
         version=1,  # Controls the size of the QR code (1 is the smallest)
         error_correction=qrcode.constants.ERROR_CORRECT_L,
-        box_size=10,  # Size of each box in pixels
-        border=4,  # Border size in boxes
+        box_size=20,  # Size of each box in pixels
+        border=6,  # Border size in boxes
     )
     
     # Add data to QR code
