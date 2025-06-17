@@ -106,7 +106,7 @@ def create_qr_code(
         img = qr.make_image(
             image_factory=StyledPilImage,
             module_drawer=module_drawer,
-            color_mask=SolidFillColorMask(fill, back)
+            color_mask=SolidFillColorMask(front_color=fill, back_color=back)
         )
     else:
         # Use simple image for square style (faster)
